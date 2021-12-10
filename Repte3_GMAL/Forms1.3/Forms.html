@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<style>
 		input[type=text],
 		select {
@@ -53,20 +53,20 @@
 			<h1>Entra les teves dades per a començar.</h1>
 		</div>
 		<!-- Inici del formulari:
-				action - indica el fitxer que hauria de processar la informació. Si aquestprototip fos real, caldría un servidor intermediari.
+				action - indica el fitxer que hauria de processar la informació. Si aquest prototip fos real, caldría un servidor intermediari.
 				get - indica que les dades son visibles a la url quan fem l'enviament. (CAL TINDRE CURA AMB DADES SENSIBLES)
 			-->
 		<form action="http://localhost:3000" method="post"> <!-- Fitxer al que reenviem les dades per a la seva mostra i métode -->
 			<div class="row mb-3">
 				<label for="Email" class="col-sm-2 col-form-label">Email</label>
 				<div class="col-sm-10">
-					<input type="Email" class="form-control" id="Email" placeholder="Email">
+					<input type="email" class="form-control" id="Email" placeholder="Email" name="email">
 				</div>
 			</div>
 			<div class="row mb-3">
 				<label for="Clau" class="col-sm-2 col-form-label">Clau</label>
 				<div class="col-sm-10">
-					<input type="password" class="form-control" id="Clau" placeholder="Clau">
+					<input type="password" class="form-control" id="Clau" placeholder="Clau" name="clau">
 				</div>
 				<div class="form-text">
 					<span>
